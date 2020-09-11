@@ -19,7 +19,7 @@ define("__JS__", __SRC__."/js");
 
 define('_DBTYPE', 'mysql');
 define('_HOST', 'localhost');
-define('_DBNAME', 'nuxt');
+define('_DBNAME', 'publichealthform');
 define('_DBUSER', 'root');
 define('_DBPASSWORD', '1234');
 define('_CHARSET', 'utf8');

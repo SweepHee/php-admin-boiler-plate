@@ -12,6 +12,9 @@ if (preg_match('/models/', strtolower($paths[1]))) {
 }
 
 $loadpath =  $paths[0].'/'.$className.'/'.$paths[2].'.php';
+if (preg_match('/route/',strtolower($paths[0]))) {
+    $loadpath =  'app\libs\Route.php';
+}
 
 if (!file_exists($loadpath)) {
     echo " --- autoload : file not found. ($loadpath) ";
