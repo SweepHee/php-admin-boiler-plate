@@ -27,6 +27,14 @@ class UserController extends _Controller
         return self::$model->create($payload);
     }
 
+    public function show($payload)
+    {
+        $list =  self::$model->show($payload);
+
+        require_once(__userPath__."/index.php");
+    }
+
+
     public function check($payload)
     {
         return self::$model->check($payload);

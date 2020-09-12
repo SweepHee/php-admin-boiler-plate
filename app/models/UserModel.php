@@ -7,6 +7,9 @@ use PDOException;
 class UserModel extends _Model
 {
 
+    public $header = "";
+    public $footer = "";
+
     public function is($type, $data)
     {
 
@@ -135,6 +138,11 @@ class UserModel extends _Model
             $this->pdo->rollback();
             return ["code"=> 3, "msg"=>"pdo exception...", "data"=>$e ];
         }
+
+    }
+
+    public function show($payload)
+    {
 
     }
 

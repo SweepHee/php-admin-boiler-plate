@@ -2,7 +2,7 @@
 
 
 Route::get("/user", "UserController");
-Route::get("/user/:id", "UserController@test");
+Route::get("/user/:id", "UserController@show");
 Route::get("/user/:id/test/:id", "UserController@test");
 
 
