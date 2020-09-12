@@ -23,6 +23,15 @@ class Application
         $method = $connectionPathInfo['method'];
         $request = $connectionPathInfo['request'];
 
+        echo "<pre>";
+        print_r(Route::$get);
+        echo "</pre>";
+
+        echo "<pre>";
+        print_r(Route::$post);
+        echo "</pre>";
+
+
         // 컨트롤러 path에 존재하지 않는 컨트롤러는 404처리
         if (!file_exists(__PATH__."/app/controllers/{$controller}.php")) {
             http_response_code(404);

@@ -1,5 +1,7 @@
 <?php
 
+Route::get("/", "FormController");
+
 
 Route::get("/user", "UserController");
 Route::get("/user/:id", "UserController@show");
